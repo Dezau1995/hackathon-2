@@ -8,7 +8,7 @@ import Home from "./pages/Home";
 import Profile from "./pages/Profile";
 import Form from "./pages/Form";
 import Helpers from "./pages/Helpers";
-import Appoimnt from "./pages/Appoimnt";
+import Appointment from "./pages/Appointment";
 import Request from "./pages/Request";
 
 const router = createBrowserRouter([
@@ -33,8 +33,8 @@ const router = createBrowserRouter([
         element: <Helpers />,
       },
       {
-        path: "/appoimnt",
-        element: <Appoimnt />,
+        path: "/appointment",
+        element: <Appointment />,
       },
       {
         path: "/request",
