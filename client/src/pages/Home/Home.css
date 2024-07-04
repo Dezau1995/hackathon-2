@@ -1,0 +1,23 @@
+#home {
+  text-align: center;
+}
+#home h1 {
+  font-family: var(--font-passion);
+  font-size: 1.7rem;
+  margin-top: 2vh;
+}
+#home h3 {
+  font-family: var(--font-poppins);
+  font-weight: 300;
+  margin-top: 3vh;
+}
+#home p {
+  font-family: var(--font-poppins);
+  margin-top: 2vh;
+}
+#home img {
+  background-color: #e7f9fa;
+}
+.img-become {
+  width: 50vw;
+}
