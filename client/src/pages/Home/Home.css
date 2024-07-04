@@ -1,23 +1,39 @@
 #home {
   text-align: center;
+  margin: 0 2vh 2vh 2vh;
 }
 #home h1 {
   font-family: var(--font-passion);
   font-size: 1.7rem;
   margin-top: 2vh;
+  color: #27515e;
 }
 #home h3 {
   font-family: var(--font-poppins);
   font-weight: 300;
   margin-top: 3vh;
+  color: #27515e;
 }
 #home p {
   font-family: var(--font-poppins);
   margin-top: 2vh;
+  color: #27515e;
 }
 #home img {
   background-color: #e7f9fa;
 }
 .img-become {
   width: 50vw;
+}
+.color-part {
+  background-color: #e7f9fa;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.mentor-img {
+  margin-top: 2vh;
+}
+.button-mentor {
+  margin: 2vh 2vh;
 }

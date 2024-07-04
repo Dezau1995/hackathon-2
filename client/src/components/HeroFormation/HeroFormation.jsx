@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/prop-types */
 import "./heroFormation.css";
 import BookmarkAdd from "@mui/icons-material/BookmarkAddOutlined";

@@ -1,7 +1,6 @@
 /* eslint-disable react/no-array-index-key */
 /* eslint-disable no-plusplus */
 import React, { useEffect, useState } from "react";
-import imgProfile from "../../assets/photoprofil.png";
 import "./Cardmentor.css";
 
 function CardMentor() {
@@ -70,18 +69,18 @@ function CardMentor() {
     <section id="cardmentor">
       {currentMentors.map((mentor, index) => (
         <React.Fragment key={index}>
-          <section className="imgmentor" id={`mentor-${index}`}>
-            <img className="imgprofile" src={mentor.img} alt="user" />
-            <div className="name">
-              <h1>{mentor.name}</h1>
-              <p>{mentor.company.nom}</p>
-            </div>
-          </section>
+            <section className="imgmentor" id={`mentor-${index}`}>
+              <img className="imgprofile" src={mentor.img} alt="user" />
+              <div className="name">
+                <h1>{mentor.name}</h1>
+                <p>{mentor.company.nom}</p>
+              </div>
+            </section>
 
-          <article className="service" id={`service-${index}`}>
-            <p className="titleservice">Service :</p>
-            {mentor.skills}
-          </article>
+            <article className="service" id={`service-${index}`}>
+              <p className="titleservice">Service :</p>
+              {mentor.skills}
+            </article>
         </React.Fragment>
       ))}
 
