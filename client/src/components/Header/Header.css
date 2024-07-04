@@ -7,10 +7,12 @@
 }
 .user-logo {
   font-size: 2rem;
+  color: #27515e;
   cursor: pointer;
 }
 .burgerMenu {
   cursor: pointer;
+  color: #27515e;
 }
 
 .burgerNav {
