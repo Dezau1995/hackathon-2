@@ -12,6 +12,7 @@ import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
 import Listementors from "./pages/ListeMentors/Listementors";
 import Createaccount from "./pages/login/Createacount";
+import Login from "./pages/login/Login";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
       {
         path: "/createacount",
         element: <Createaccount />,
+      },
+      {
+        path: "/Login",
+        element: <Login />,
       },
     ],
   },
