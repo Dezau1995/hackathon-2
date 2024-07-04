@@ -31,6 +31,9 @@ function Header() {
           <ul>
             <li>
               <a href="/">Accueil</a>
+              <a href="/mentors">Mentors</a>
+              <a href="/formations">Formations</a>
+              <a href="/createacount">Inscription</a>
             </li>
           </ul>
         </nav>

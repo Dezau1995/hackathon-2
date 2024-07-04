@@ -11,12 +11,14 @@ function DirectMessage() {
       <h1>{mentor[0].name}</h1>
       <section className="section-dm">
         <p>Salut, comment vas tu ?</p>
+        <p className="date">Posté le {new Date().toLocaleDateString()}</p>
       </section>
       <section className="section-dm">
         <p>
           Oui merci, j'aurai besoin d'aide pour savoir de quels papier j'ai
           besoin pour m'inscrire à la formation pour être data analyst.
         </p>
+        <p className="date">Posté le {new Date().toLocaleDateString()}</p>
       </section>
       <section className="anwser-dm">
         <textarea name="chat" id="chat" placeholder="Répondre ici .." />

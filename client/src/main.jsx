@@ -5,8 +5,6 @@ import App from "./App";
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 import Form from "./pages/Form/Form";
-import Helpers from "./pages/Helpers/Helpers";
-import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
 import Mentor from "./pages/Mentor/Mentor";
 import Listementors from "./pages/ListeMentors/Listementors";
@@ -37,17 +35,13 @@ const router = createBrowserRouter([
         element: <Form />,
       },
       {
-        path: "/helpers",
-        element: <Helpers />,
+        path: "/mentors",
+        element: <Listementors />,
       },
       {
         path: "/mentor/:id",
         element: <Mentor />,
         // loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
-      },
-      {
-        path: "/appointment",
-        element: <Appointment />,
       },
       {
         path: "/request",
@@ -57,10 +51,6 @@ const router = createBrowserRouter([
         path: "/formations",
         element: <Formation />,
         loader: () => fetch(`${api}/trainings`),
-      },
-      {
-        path: "/mentor",
-        element: <Listementors />,
       },
       {
         path: "/createacount",
