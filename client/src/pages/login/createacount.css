@@ -1,0 +1,28 @@
+.createaccount {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputtitle {
+  text-align: center;
+}
+
+.inputcreate {
+  border: none;
+  width: 80%;
+  margin: 20px;
+  font-size: small;
+}
+
+.inputtext {
+  font-size: 13px;
+  margin-left: 10%;
+}
+
+.inputtextinfo {
+  font-size: 13px;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-weight: 800;
+}
