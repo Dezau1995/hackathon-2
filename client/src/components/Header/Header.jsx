@@ -34,6 +34,7 @@ function Header() {
               <a href="/mentors">Mentors</a>
               <a href="/formations">Formations</a>
               <a href="/messagerie">Messagerie</a>
+              <a href="/i-a">Hand2Hand AI</a>
             </li>
           </ul>
         </nav>
