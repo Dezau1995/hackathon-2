@@ -12,10 +12,13 @@
 :root {
   --font-poppins: "Poppins", sans-serif;
   --font-passion: "Passion One", sans-serif;
+  --main-color: #e7f9fa;
+  --text-button: #27515e;
 }
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: #eff5fd;
 }
 
 img,
@@ -44,7 +47,41 @@ h6 {
   overflow-wrap: break-word;
 }
 
+p,
+li,
+input,
+button {
+  font-family: var(--font-poppins);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-passion);
+}
+
 #root,
 #__next {
   isolation: isolate;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7vh;
+  padding: 0 20px;
+  border: none;
+  border-radius: 15px;
+  background-color: #90dfeb;
+  color: var(--text-button);
+  font-weight: 700;
+  .icon-user-contact {
+    height: 70%;
+    width: 70%;
+    color: black;
+  }
 }

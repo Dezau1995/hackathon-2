@@ -1,10 +1,13 @@
 #footer {
+  margin: 2vh 2vh 0 2vh;
+  padding: 2vh 2vh;
   color: #27515e;
   font-family: "Poppins";
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  background-color: #e7f9fa;
 }
 
 .listfooter {
@@ -20,11 +23,13 @@
 li {
   padding: 5px 0 5px 0;
 }
+
 .titlefooter {
   padding-bottom: 10px;
   font-weight: 600;
   font-family: "Passion One";
 }
+
 .imgFooter {
   width: 30px;
   padding-bottom: 10px;

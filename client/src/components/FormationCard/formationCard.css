@@ -1,0 +1,37 @@
+.card-body {
+  display: flex;
+  gap: 15px;
+  border: solid, 0, 5px, grey;
+  border-radius: 10px;
+  padding: 15px;
+  max-width: 70vw;
+  background-color: var(--main-color);
+
+  img {
+    min-height: 100%;
+    max-width: 30%;
+    object-fit: cover;
+    border-radius: 10px 10px;
+  }
+  p,
+  li {
+    font-size: small;
+  }
+  h1 {
+    font-size: large;
+  }
+
+  li {
+    font-size: smaller;
+    padding: 0;
+  }
+  .submit-button {
+    margin: 10px 0;
+  }
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+}

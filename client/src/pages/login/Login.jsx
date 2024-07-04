@@ -13,12 +13,12 @@ function Login() {
   };
 
   const handleCreateAccount = () => {
-    navigate("/createacount");
+    navigate("/profile");
   };
 
   return (
-    <section id="Createaccount">
-      <h1 className="inputtitle">Se connecter</h1>
+    <section id="login">
+      <h1 className="logintitle">Se connecter</h1>
 
       <section className="createaccount">
         <input className="inputcreate" placeholder="E-mail*" type="email" />
@@ -32,12 +32,16 @@ function Login() {
         <button type="button" onClick={handleSignUp}>
           Se connecter
         </button>
-        <p>Mot de passe oubliée?</p>
-        <p onClick={handleCreateAccount} style={{ cursor: "pointer" }}>
+        <p className="logintext">Mot de passe oubliée?</p>
+        <p
+          className="logintext"
+          onClick={handleCreateAccount}
+          style={{ cursor: "pointer" }}
+        >
           Vous n'avez pas de compte ? Créer un compte
         </p>
       </section>
-      <p className="inputtextinfo">Consultez nos mentions d'informations</p>
+
       <ul className="loginul">
         <li className="lilogin">Polite de confidentialité</li>
         <li className="lilogin">Condition d'utilisation</li>

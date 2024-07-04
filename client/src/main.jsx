@@ -1,18 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App";
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
 import Form from "./pages/Form/Form";
-import Helpers from "./pages/Helpers/Helpers";
-import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
+import Mentor from "./pages/Mentor/Mentor";
 import Listementors from "./pages/ListeMentors/Listementors";
+import Formation from "./pages/Formation/Formation";
 import Createaccount from "./pages/login/Createacount";
 import Login from "./pages/login/Login";
+import Messagerie from "./pages/Messagerie/Messagerie";
+import DirectMessage from "./pages/Messagerie/DirectMessage";
+
+const api = "http://192.168.1.251:8000";
 
 const router = createBrowserRouter([
   {
@@ -33,20 +35,22 @@ const router = createBrowserRouter([
         element: <Form />,
       },
       {
-        path: "/helpers",
-        element: <Helpers />,
+        path: "/mentors",
+        element: <Listementors />,
       },
       {
-        path: "/appointment",
-        element: <Appointment />,
+        path: "/mentor/:id",
+        element: <Mentor />,
+        // loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
       },
       {
         path: "/request",
         element: <Request />,
       },
       {
-        path: "/mentor",
-        element: <Listementors />,
+        path: "/formations",
+        element: <Formation />,
+        loader: () => fetch(`${api}/trainings`),
       },
       {
         path: "/createacount",
@@ -56,7 +60,17 @@ const router = createBrowserRouter([
         path: "/Login",
         element: <Login />,
       },
+      {
+        path: "/messagerie",
+        element: <Messagerie />,
+        loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+      },
     ],
+  },
+  {
+    path: "/direct-message",
+    element: <DirectMessage />,
+    loader: () => fetch(`http://192.168.1.251:8000/mentors`),
   },
 ]);
 
