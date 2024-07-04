@@ -1,18 +1,41 @@
-// import { useLoaderData } from "react-router-dom";
+import Groq from "groq-sdk";
 import { useState } from "react";
 import "./directmessage.css";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
-import Header from "../../components/Header/Header";
 
-function DirectMessage() {
+function IAMessagerie() {
   const navigate = useNavigate();
   const [isReplying, setIsReplying] = useState(false);
-  const [message, setMessage] = useState(null);
+  const [message, setMessage] = useState("");
+  const [response, setResponse] = useState("En attente");
+
+  const groq = new Groq({
+    apiKey: import.meta.env.VITE_AI_KEY,
+    dangerouslyAllowBrowser: true,
+  });
+
+  async function getGroqChatCompletion() {
+    return groq.chat.completions.create({
+      messages: [
+        {
+          role: "user",
+          content: message,
+        },
+      ],
+      model: "llama3-8b-8192",
+    });
+  }
+  async function main() {
+    const chatCompletion = await getGroqChatCompletion();
+    // Print the completion returned by the LLM.
+    setResponse(chatCompletion.choices[0]?.message?.content);
+    setIsReplying(true);
+  }
 
   const handleClick = () => {
-    navigate("/messagerie");
+    navigate("/");
   };
 
   const handleChange = (e) => {
@@ -20,17 +43,15 @@ function DirectMessage() {
   };
 
   return (
-    <main className="display-dm">
-      <Header />
+    <main>
       <MdOutlineArrowBack className="icon-navigation" onClick={handleClick} />
-      <h1>Brian Boudrioux</h1>
+      <h1>IA Générative</h1>
       <section className="section-dm">
         <p>Bonjour, en quoi puis-je vous aider ?</p>
-        <p className="date">Posté le {new Date().toLocaleDateString()}</p>
       </section>
       {isReplying && (
         <section className="section-dm">
-          <p>{message}</p>
+          <p>{response}</p>
           <p className="date">Posté le {new Date().toLocaleDateString()}</p>
         </section>
       )}
@@ -42,7 +63,13 @@ function DirectMessage() {
           value={message}
           onChange={handleChange}
         />
-        <button type="button" label="Send" onClick={() => setIsReplying(true)}>
+        <button
+          type="button"
+          label="Send"
+          onClick={() => {
+            main();
+          }}
+        >
           <BsFillSendFill />
         </button>
       </section>
@@ -50,4 +77,4 @@ function DirectMessage() {
   );
 }
 
-export default DirectMessage;
+export default IAMessagerie;

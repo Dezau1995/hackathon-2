@@ -14,6 +14,7 @@ import Createaccount from "./pages/login/Createacount";
 import Login from "./pages/login/Login";
 import Messagerie from "./pages/Messagerie/Messagerie";
 import DirectMessage from "./pages/Messagerie/DirectMessage";
+import IAMessagerie from "./pages/Messagerie/IAMessagerie";
 
 // const api = "http://192.168.1.251:8000";
 
@@ -68,14 +69,18 @@ const router = createBrowserRouter([
       {
         path: "/messagerie",
         element: <Messagerie />,
-        loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+        // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+      },
+      {
+        path:"/i-a",
+        element: <IAMessagerie />
       },
     ],
   },
   {
     path: "/direct-message",
     element: <DirectMessage />,
-    loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+    // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
   },
 ]);
 

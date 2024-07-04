@@ -1,10 +1,10 @@
 import { BsChatDotsFill } from "react-icons/bs";
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { MdOutlineAccessTime } from "react-icons/md";
 import "./messagerie.css";
 
 function Messagerie() {
-  const dataMentors = useLoaderData();
+  // const dataMentors = useLoaderData();
   const navigate = useNavigate();
 
   const handleDm = () => navigate("/direct-message");
@@ -20,11 +20,11 @@ function Messagerie() {
           role="presentation"
         >
           <img
-            src={dataMentors[0].img}
+            src="https://images.unsplash.com/photo-1514929781313-76fcbb2136b6?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="profile-avatar"
           />
           <section>
-            <h3>{dataMentors[0].name}</h3>
+            <h3>Brian Boudrioux</h3>
             <p>Fils de la discussion ...</p>
           </section>
           <section className="timer-dm">
@@ -34,11 +34,11 @@ function Messagerie() {
         </article>
         <article className="display-card-dm">
           <img
-            src={dataMentors[1].img}
+            src="https://images.unsplash.com/photo-1474176857210-7287d38d27c6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="profile-avatar"
           />
           <section>
-            <h3>{dataMentors[1].name}</h3>
+            <h3>Celine Berthon</h3>
             <p>Fils de la discussion ...</p>
           </section>
           <section className="timer-dm">
@@ -48,11 +48,11 @@ function Messagerie() {
         </article>
         <article className="display-card-dm">
           <img
-            src={dataMentors[2].img}
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="profile-avatar"
           />
           <section>
-            <h3>{dataMentors[2].name}</h3>
+            <h3>Mickael Lambert</h3>
             <p>Fils de la discussion ...</p>
           </section>
           <section className="timer-dm">
@@ -62,11 +62,11 @@ function Messagerie() {
         </article>
         <article className="display-card-dm">
           <img
-            src={dataMentors[3].img}
+            src="https://images.unsplash.com/photo-1509460913899-515f1df34fea?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="profile-avatar"
           />
           <section>
-            <h3>{dataMentors[3].name}</h3>
+            <h3>Rami GAALONI</h3>
             <p>Fils de la discussion ...</p>
           </section>
           <section className="timer-dm">
