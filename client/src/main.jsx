@@ -12,6 +12,7 @@ import Mentor from "./pages/Mentor/Mentor";
 import Listementors from "./pages/ListeMentors/Listementors";
 import Formation from "./pages/Formation/Formation";
 import Createaccount from "./pages/login/Createacount";
+import Login from "./pages/login/Login";
 import Messagerie from "./pages/Messagerie/Messagerie";
 import DirectMessage from "./pages/Messagerie/DirectMessage";
 
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/createacount",
         element: <Createaccount />,
+      },
+      {
+        path: "/Login",
+        element: <Login />,
       },
       {
         path: "/messagerie",
