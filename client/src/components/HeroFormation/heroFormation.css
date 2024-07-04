@@ -3,8 +3,9 @@
   flex-direction: column;
   gap: 15px;
   border-radius: 10px;
+  border: solid 0.2px;
   padding: 15px;
-  width: 70vw;
+  width: 80vw;
   background-color: var(--main-color);
 
   img {
@@ -15,6 +16,9 @@
   }
   p {
     font-size: small;
+    line-height: 1.2;
+    max-height: 10ch;
+    overflow: hidden;
   }
 
   li {
@@ -39,4 +43,14 @@
 
 .submit-button {
   margin: 10px 0;
+  height: fit-content;
+  padding: 5px 20px;
+}
+
+.save-button {
+  padding: 5px;
+}
+
+.duration {
+  font-weight: 700;
 }

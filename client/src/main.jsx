@@ -9,12 +9,13 @@ import Request from "./pages/Request/Request";
 import Mentor from "./pages/Mentor/Mentor";
 import Listementors from "./pages/ListeMentors/Listementors";
 import Formation from "./pages/Formation/Formation";
+import Forum from "./pages/Forum/Forum";
 import Createaccount from "./pages/login/Createacount";
 import Login from "./pages/login/Login";
 import Messagerie from "./pages/Messagerie/Messagerie";
 import DirectMessage from "./pages/Messagerie/DirectMessage";
 
-const api = "http://192.168.1.251:8000";
+// const api = "http://192.168.1.251:8000";
 
 const router = createBrowserRouter([
   {
@@ -49,11 +50,16 @@ const router = createBrowserRouter([
       {
         path: "/formations",
         element: <Formation />,
-        loader: () => fetch(`${api}/trainings`),
+        // loader: () => fetch(`${api}/trainings`),
       },
       {
         path: "/createacount",
         element: <Createaccount />,
+      },
+      {
+        path: "/forum",
+        element: <Forum />
+
       },
       {
         path: "/Login",
