@@ -37,7 +37,7 @@ class jobs(BaseModel):
     metier : list[str] = Field(description="the job or expertise of the person")
     skills : list[str] = Field(description="list of skills for the mentor")
     dispo : list[str] = Field(description="the availability of the person, if true then yes if false then no")
-    asso : list[str] = Field(description="the company name, and the list of description")
+    asso : list[str] = Field(description="the company name, and the description")
 
 
 
@@ -58,6 +58,6 @@ document_chain = create_stuff_documents_chain(model_chat, prompt,output_parser=p
 retriever = vectorstore.as_retriever()
 #create chain of retreival
 retriever_chain  = create_retrieval_chain(retriever,document_chain)
-
-response = retriever_chain.invoke({"input": "je cherche un mentor qui travaille dans le nucleaire"})
-pprint(response['answer'])
+def reco_mentor(text):
+    response = retriever_chain.invoke({"input": text})
+    return response['answer']
