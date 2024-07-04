@@ -50,20 +50,22 @@ function Mentor() {
           <p className="instruction-date">
             Veuillez choisir la date et l'heure souhaitée
           </p>
-          <DatePicker
-            selected={startDate}
-            onChange={(date) => setStartDate(date)}
-            showTimeSelect
-            dateFormat="Pp"
-            className="calendar"
-          />
-          <button
-            type="button"
-            className="validate-button"
-            onClick={handleValidation}
-          >
-            Valider
-          </button>
+          <section className="datepicker">
+            <DatePicker
+              selected={startDate}
+              onChange={(date) => setStartDate(date)}
+              showTimeSelect
+              dateFormat="Pp"
+              className="calendar"
+            />
+            <button
+              type="button"
+              className="validate-button"
+              onClick={handleValidation}
+            >
+              Valider
+            </button>
+          </section>
         </>
       )}
       {confirmation && <p className="confirmation">{confirmation}</p>}
