@@ -1,0 +1,30 @@
+#footer {
+  color: #27515e;
+  font-family: "Poppins";
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.listfooter {
+  display: flex;
+  justify-content: space-around;
+  justify-self: auto;
+}
+
+.footer-list {
+  list-style-type: none;
+}
+
+li {
+  padding: 5px 0 5px 0;
+}
+.titlefooter {
+  padding-bottom: 10px;
+  font-weight: 600;
+  font-family: "Passion One";
+}
+.imgFooter {
+  width: 10%;
+}
