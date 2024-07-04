@@ -10,6 +10,7 @@ import Form from "./pages/Form";
 import Helpers from "./pages/Helpers";
 import Appointment from "./pages/Appointment";
 import Request from "./pages/Request";
+import Formation from "./pages/Formation";
 
 const router = createBrowserRouter([
   {
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
+      },
+      {
+        path: "/formation",
+        element: <Formation />
       }
     ],
   },
