@@ -4,6 +4,11 @@
   align-items: center;
   gap: 10px;
   height: 100vh;
+  .icon-navigation {
+    position: fixed;
+    top: 10%;
+    left: 2%;
+  }
 }
 
 .section-dm {
@@ -13,6 +18,10 @@
   border-radius: 10px;
   padding: 10px;
   background-color: #e7f9fa;
+  .date {
+    font-size: xx-small;
+    margin: 5px;
+  }
 }
 
 .anwser-dm {
@@ -23,4 +32,16 @@
   background-color: #e7f9fa;
   position: fixed;
   bottom: 0;
+  textarea {
+    resize: none;
+    height: 100%;
+    width: 90%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+  }
+  textarea::placeholder {
+    font-family: var(--font-poppins);
+    font-size: small;
+  }
 }

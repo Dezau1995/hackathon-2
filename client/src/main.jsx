@@ -58,14 +58,14 @@ const router = createBrowserRouter([
       {
         path: "/messagerie",
         element: <Messagerie />,
-        loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+        // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
       },
     ],
   },
   {
     path: "/direct-message",
     element: <DirectMessage />,
-    loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+    // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
   },
 ]);
 

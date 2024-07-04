@@ -33,7 +33,7 @@ function Header() {
               <a href="/">Accueil</a>
               <a href="/mentors">Mentors</a>
               <a href="/formations">Formations</a>
-              <a href="/createacount">Inscription</a>
+              <a href="/messagerie">Messagerie</a>
             </li>
           </ul>
         </nav>
