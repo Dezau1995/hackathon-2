@@ -4,12 +4,12 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
-import Home from "./pages/Home";
-import Profile from "./pages/Profile";
-import Form from "./pages/Form";
-import Helpers from "./pages/Helpers";
-import Appointment from "./pages/Appointment";
-import Request from "./pages/Request";
+import Home from "./pages/Home/Home";
+import Profile from "./pages/Profile/Profile";
+import Form from "./pages/Form/Form";
+import Helpers from "./pages/Helpers/Helpers";
+import Appointment from "./pages/Appointment/Appointment";
+import Request from "./pages/Request/Request";
 
 const router = createBrowserRouter([
   {
