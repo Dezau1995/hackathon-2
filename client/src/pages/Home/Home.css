@@ -1,0 +1,23 @@
+#home {
+  text-align: center;
+}
+#home h1 {
+  font-family: "Passion One", sans-serif;
+  font-size: 1.7rem;
+  margin-top: 2vh;
+}
+#home h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: 3vh;
+}
+#home p {
+  font-family: "Poppins", sans-serif;
+  margin-top: 2vh;
+}
+#home img {
+  background-color: #e7f9fa;
+}
+.img-become {
+  width: 50vw;
+}
