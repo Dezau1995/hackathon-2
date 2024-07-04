@@ -71,7 +71,7 @@ function CardMentor() {
       {currentMentors.map((mentor, index) => (
         <React.Fragment key={index}>
           <section className="imgmentor" id={`mentor-${index}`}>
-            <img className="imgprofile" src={imgProfile} alt="user" />
+            <img className="imgprofile" src={mentor.img} alt="user" />
             <div className="name">
               <h1>{mentor.name}</h1>
               <p>{mentor.company.nom}</p>
