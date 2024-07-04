@@ -10,7 +10,9 @@ import Form from "./pages/Form/Form";
 import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
-import Mentore from "./pages/Mentore/Mentore";
+import Mentor from "./pages/Mentor/Mentor";
+
+const api = "192.168.1.251:8000";
 
 const router = createBrowserRouter([
   {
@@ -34,8 +36,9 @@ const router = createBrowserRouter([
         element: <Helpers />,
       },
       {
-        path: "/mentore/:id",
-        element: <Mentore/>,
+        path: "/mentors/:id",
+        element: <Mentor />,
+        loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
       },
       {
         path: "/appointment",
@@ -44,8 +47,9 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
-      }
+      },
     ],
+    
   },
 ]);
 
