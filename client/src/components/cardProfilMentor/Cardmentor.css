@@ -1,0 +1,28 @@
+.imgprofile {
+  width: 20%;
+  border-radius: 50%;
+}
+.imgmentor {
+  display: flex;
+  justify-content: space-around;
+}
+.name {
+  margin-top: 15px;
+}
+
+.name h1 {
+  font-weight: 800;
+  font-family: "Passion One";
+}
+.service {
+  background-color: #90dfeb;
+  border-radius: 25px;
+  height: 120px;
+  margin: 15px;
+  padding: 8px 0 0 15px;
+}
+.titleservice {
+  font-family: "Passion One";
+  font-size: 24px;
+  font-weight: 900;
+}
