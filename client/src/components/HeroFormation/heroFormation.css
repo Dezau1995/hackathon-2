@@ -1,0 +1,42 @@
+.hero-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  padding: 15px;
+  width: 70vw;
+  background-color: var(--main-color);
+
+  img {
+    max-height: 30vh;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  p {
+    font-size: small;
+  }
+
+  li {
+    font-size: smaller;
+    padding: 0;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: x-large;
+    text-align: center;
+  }
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.submit-button {
+  margin: 10px 0;
+}

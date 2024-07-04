@@ -1,8 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-
 import App from "./App";
 import Home from "./pages/Home/Home";
 import Profile from "./pages/Profile/Profile";
@@ -11,8 +9,11 @@ import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
 import Mentor from "./pages/Mentor/Mentor";
+import Listementors from "./pages/ListeMentors/Listementors";
+import Formation from "./pages/Formation/Formation";
+import Createaccount from "./pages/login/Createacount";
 
-const api = "192.168.1.251:8000";
+const api = "http://192.168.1.251:8000";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+        loader: () => fetch(`http://192.168.1.251:8000/clients`),
       },
       {
         path: "/form",
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
         element: <Helpers />,
       },
       {
-        path: "/mentors/:id",
+        path: "/mentor/:id",
         element: <Mentor />,
         loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
       },
@@ -47,6 +49,19 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
+      },
+      {
+        path: "/formations",
+        element: <Formation />,
+        loader: () => fetch(`${api}/trainings`),
+      },
+      {
+        path: "/mentor",
+        element: <Listementors />,
+      },
+      {
+        path: "/createacount",
+        element: <Createaccount />,
       },
     ],
     
