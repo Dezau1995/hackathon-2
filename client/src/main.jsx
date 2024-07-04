@@ -23,6 +23,7 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
+        loader:() => fetch(`http://192.168.1.251:8000/clients`),
       },
       {
         path: "/form",
