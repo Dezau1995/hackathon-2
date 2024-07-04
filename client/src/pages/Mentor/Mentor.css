@@ -1,0 +1,97 @@
+#mentor {
+  background-color: #eff5fd;
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  min-height: 100vh;
+}
+.header-mentor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#mentor img {
+  border-radius: 50%;
+  width: 30vw;
+  margin-top: 1.5vh;
+}
+#mentor h1 {
+  font-family: var(--font-passion);
+  font-size: 1.7rem;
+  text-align: center;
+}
+#mentor h3,
+p {
+  font-family: var(--font-poppins);
+}
+.groupe-mentor {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-left: 1vh;
+}
+.button-rdv {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 6vh;
+  align-items: center;
+  display: flex;
+  width: 22vh;
+  height: 6vh;
+  background-color: #90dfeb;
+  border: none;
+  font-family: var(--font-poppins);
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+}
+.calendar-icon {
+  margin-right: 1vh;
+}
+.instruction-date {
+  text-align: center;
+  margin-top: 2vh;
+}
+.datepicker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2vh;
+}
+.calendar {
+  margin-left: 10vh;
+  border-radius: 9px;
+}
+.validate-button {
+  height: 3vh;
+  font-family: var(--font-poppins);
+  margin-left: 1vh;
+  border-radius: 5px;
+  background-color: #90dfeb;
+  border: none;
+}
+.react-datepicker {
+  position: absolute;
+  width: 84vw;
+  margin-left: 17vh;
+}
+.confirmation {
+  text-align: center;
+  margin-top: 5vh;
+  margin-bottom: 2%;
+}
+.card-training {
+  margin-top: 6vh;
+  display: flex;
+  justify-content: space-around;
+}
+#mentor card {
+  text-align: center;
+  box-shadow: 4px 4px 10px grey;
+  background-color: white;
+  border-radius: 20px;
+  width: 30vw;
+  height: 15vh;
+}
