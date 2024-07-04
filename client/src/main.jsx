@@ -1,6 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App";
@@ -11,6 +10,9 @@ import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
 import Listementors from "./pages/ListeMentors/Listementors";
+import Formation from "./pages/Formation/Formation";
+
+const api = "http://192.168.1.251:8000";
 import Createaccount from "./pages/login/Createacount";
 
 const router = createBrowserRouter([
@@ -42,6 +44,11 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
+      },
+      {
+        path: "/formations",
+        element: <Formation />,
+        loader: () => fetch(`${api}/trainings`),
       },
       {
         path: "/mentor",
