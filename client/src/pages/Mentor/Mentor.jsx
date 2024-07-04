@@ -36,7 +36,7 @@ function Mentor() {
 
   return (
     <div id="mentor">
-      <NavLink to="/mentor" className="return">
+      <NavLink to="/mentors" className="return">
         <p className="return-mentors">
           <FaArrowLeft className="return-arrow" />
           retour
