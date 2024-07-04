@@ -26,5 +26,6 @@ li {
   font-family: "Passion One";
 }
 .imgFooter {
-  width: 10%;
+  width: 30px;
+  padding-bottom: 10px;
 }
