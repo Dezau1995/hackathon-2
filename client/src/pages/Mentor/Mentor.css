@@ -1,7 +1,21 @@
 #mentor {
   min-height: 100vh;
 }
+.return {
+  text-decoration: none;
+  color: black;
+}
+.return-arrow {
+  margin-left: 1vh;
+  margin-right: 1vh;
+  cursor: pointer;
+}
+.return-mentors {
+  display: flex;
+  align-items: center;
+}
 .header-mentor {
+  margin-top: 2vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -9,15 +23,14 @@
 }
 #mentor img {
   border-radius: 50%;
-  width: 30vw;
+  width: 20vh;
+  height: 20vh;
   margin-top: 1.5vh;
+  object-fit: cover;
 }
 #mentor h1 {
   font-size: 1.7rem;
   text-align: center;
-}
-.expertise {
-  margin-top: 2vh;
 }
 #mentor h3,
 p {
@@ -26,13 +39,13 @@ p {
 .groupe-mentor {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  margin-left: 1vh;
+  align-items: center;
+  margin-bottom: 3vh;
 }
 .button-rdv {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
   align-items: center;
   display: flex;
   width: 22vh;
@@ -80,15 +93,30 @@ p {
 }
 .confirmation {
   text-align: center;
-  margin-top: 5vh;
   margin-bottom: 2%;
+}
+.hide-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hide-button {
+  padding: 0;
+  margin-top: 1vh;
+  border-radius: 10px;
+  width: 28vh;
+  height: 6vh;
+}
+.message-icon {
+  font-size: 1.5rem;
+  margin-right: 1vh;
 }
 .card-training {
   margin-top: 3vh;
   display: flex;
   justify-content: space-around;
 }
-#mentor ul {
+.liste-skills {
   padding: 2vh;
   background-color: #e7f9fa;
   text-align: center;
