@@ -9,7 +9,10 @@
 * {
   margin: 0;
 }
-
+:root {
+  --font-poppins: "Poppins", sans-serif;
+  --font-passion: "Passion One", sans-serif;
+}
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
