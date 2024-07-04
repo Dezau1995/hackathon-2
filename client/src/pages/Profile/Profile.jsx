@@ -18,8 +18,8 @@ function Profile() {
         <article className="infos-user-profile">
           <section className="data-user-profile">
             <h3>{user.group.charAt(0).toUpperCase() + user.group.slice(1)}</h3>
-            <p>Age</p>
-            <p>localisation</p>
+            <p>{user.age} ans</p>
+            <p>{user.ville}</p>
           </section>
           <button type="button" label="contact">
             <MdContactMail className="icon-user-contact" />

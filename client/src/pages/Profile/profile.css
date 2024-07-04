@@ -13,6 +13,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  h1 {
+    font-family: var(--font-passion);
+  }
   .infos-user-profile {
     display: flex;
     align-items: center;
@@ -26,6 +29,10 @@
   .data-user-profile {
     display: flex;
     flex-direction: column;
+    h3,
+    p {
+      font-family: var(--font-poppins);
+    }
   }
   button {
     display: flex;
@@ -47,16 +54,23 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-family: var(--font-passion);
+  }
   .users-needs {
     width: 100%;
     margin: 1rem 0;
   }
   li {
     list-style: none;
+    font-family: var(--font-poppins);
   }
 }
 .section-user-contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
+  h2 {
+    font-family: var(--font-passion);
+  }
 }
