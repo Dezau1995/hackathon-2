@@ -13,6 +13,7 @@ import Listementors from "./pages/ListeMentors/Listementors";
 import Formation from "./pages/Formation/Formation";
 
 const api = "http://192.168.1.251:8000";
+import Createaccount from "./pages/login/Createacount";
 
 const router = createBrowserRouter([
   {
@@ -52,6 +53,10 @@ const router = createBrowserRouter([
       {
         path: "/mentor",
         element: <Listementors />,
+      },
+      {
+        path: "/createacount",
+        element: <Createaccount />,
       },
     ],
   },
