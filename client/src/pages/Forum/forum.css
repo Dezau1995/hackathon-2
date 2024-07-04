@@ -1,36 +1,39 @@
 .forum-main {
-    display: flex;
-    gap: 20px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
 }
 
 .forum-article {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    background-color: #E5E9E7;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: #e5e9e7;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90vw;
+  h2 {
+    line-height: 1;
+  }
 }
 
 .forum-button {
-    align-self: flex-end;
+  align-self: flex-end;
 }
 
 .forum-participants {
-    font-weight: 600;
-    font-size: smaller;
+  font-weight: 600;
+  font-size: smaller;
 }
 
 .forum-card-footer {
-    display: flex;
-    width: 100%;
-    margin: 10px 0;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  margin: 10px 0;
+  justify-content: space-between;
+  align-items: center;
 }

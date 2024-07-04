@@ -26,3 +26,23 @@
   margin-top: 5%;
   font-weight: 800;
 }
+
+.lilogin {
+  list-style-type: none;
+  font-size: 10px;
+}
+
+.logintitle {
+  text-align: center;
+  margin: 25px;
+}
+.logintext {
+  font-size: 10px;
+  margin: 10px;
+}
+
+.loginul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
