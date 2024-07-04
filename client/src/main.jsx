@@ -10,6 +10,7 @@ import Form from "./pages/Form/Form";
 import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
+import Mentore from "./pages/Mentore/Mentore";
 
 const router = createBrowserRouter([
   {
@@ -31,6 +32,10 @@ const router = createBrowserRouter([
       {
         path: "/helpers",
         element: <Helpers />,
+      },
+      {
+        path: "/mentore/:id",
+        element: <Mentore/>,
       },
       {
         path: "/appointment",
