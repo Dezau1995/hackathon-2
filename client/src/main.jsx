@@ -10,6 +10,8 @@ import Form from "./pages/Form/Form";
 import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
+import Messagerie from "./pages/Messagerie/Messagerie";
+import DirectMessage from "./pages/Messagerie/DirectMessage";
 
 const router = createBrowserRouter([
   {
@@ -40,8 +42,18 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
-      }
+      },
+      {
+        path: "/messagerie",
+        element: <Messagerie />,
+        loader:() => fetch(`http://192.168.1.251:8000/mentors`),
+      },
     ],
+  },
+  {
+    path:"/direct-message",
+    element: <DirectMessage />,
+    loader:() => fetch(`http://192.168.1.251:8000/mentors`),
   },
 ]);
 
