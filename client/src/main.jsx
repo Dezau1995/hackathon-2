@@ -16,7 +16,7 @@ import Createaccount from "./pages/login/Createacount";
 import Messagerie from "./pages/Messagerie/Messagerie";
 import DirectMessage from "./pages/Messagerie/DirectMessage";
 
-const api = "http://192.168.1.251:8000";
+// const api = "http://192.168.1.251:8000";
 
 const router = createBrowserRouter([
   {
@@ -56,7 +56,7 @@ const router = createBrowserRouter([
       {
         path: "/formations",
         element: <Formation />,
-        loader: () => fetch(`${api}/trainings`),
+        // loader: () => fetch(`${api}/trainings`),
       },
       {
         path: "/mentor",
