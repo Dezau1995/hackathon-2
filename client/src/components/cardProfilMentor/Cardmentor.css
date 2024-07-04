@@ -1,6 +1,18 @@
+#cardmentor h1 {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 2vh 1vh 3vh 1vh;
+}
 .imgprofile {
-  width: 20%;
-  border-radius: 50%;
+  width: 10vh;
+  height: 10vh;
+  border-radius: 100%;
+  object-fit: cover;
+}
+.container-mentors {
+  background-color: #e7f9fa;
+  padding: 2vh 2vh;
+  margin: 1vh 2vh 1vh 2vh;
 }
 .imgmentor {
   display: flex;
@@ -9,23 +21,27 @@
 .name {
   margin-top: 15px;
 }
-
-.name h1 {
-  font-weight: 800;
-  font-family: "Passion One";
+.mentor-name {
+  text-decoration: none;
+  color: black;
+}
+.titleservice {
+  font-weight: 100;
 }
 .service {
   background-color: #90dfeb;
-  border-radius: 25px;
+  border-radius: 20px;
   margin: 15px;
-  padding: 8px 0 0 15px;
+  margin: 2vh 1vh 2vh 1vh;
+  text-align: center;
 }
-.titleservice {
-  font-family: "Passion One";
-  font-size: 24px;
-  font-weight: 900;
+.mentor-skills {
+  padding: 0;
 }
-
+#cardmentor li {
+  list-style-type: none;
+  margin-bottom: 1vh;
+}
 .pagination {
   display: flex;
   justify-content: center;
@@ -57,9 +73,4 @@
   background-color: #f0f0f0;
   cursor: not-allowed;
   color: #cccccc;
-}
-.titlelistementor {
-  text-align: center;
-  font-family: "Passion One";
-  font-weight: 900;
 }

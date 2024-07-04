@@ -1,27 +1,27 @@
 import "./Mentor.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { NavLink, useParams } from "react-router-dom";
 import { LuCalendarClock } from "react-icons/lu";
+import { BiMessageRounded } from "react-icons/bi";
+import { FaArrowLeft } from "react-icons/fa6";
 import DatePicker from "react-datepicker";
+import fakeMentors from "../../data";
 import "react-datepicker/dist/react-datepicker.css";
-import moi from "../../assets/images/IMG_5476.svg";
-
-const mentors = {
-  id: 1,
-  img: moi,
-  name: "Coline Grosso",
-  expertise: "Animateur du patrimoine",
-  age: 38,
-  localisation: "Paris",
-  skills1: "Capacite a poser des questions pour clarifier et apprendre,",
-  skills2: "apprentissage des competences de base en bricolage et reparation domestique,",
-  skills3: "capacité d'écoute active pour comprendre les besoins et attentes des autres,",
-  skills4: "connaissance des lois locales et des reglementations basiques"
-};
 
 function Mentor() {
+  const { id } = useParams();
+  const [mentor, setMentor] = useState(null);
   const [startDate, setStartDate] = useState(null);
   const [confirmation, setConfirmation] = useState("");
 
+  useEffect(() => {
+    const selectedMentor = fakeMentors.find((m) => m.id === parseInt(id, 10));
+    setMentor(selectedMentor);
+  }, [id]);
+
+  if (!mentor) {
+    return <p>Chargement...</p>;
+  }
   const handleClick = () => {
     setStartDate(new Date());
     setConfirmation("");
@@ -29,21 +29,27 @@ function Mentor() {
 
   const handleValidation = () => {
     setConfirmation(
-      `Votre demande a bien été envoyée à ${mentors.firstname} pour le ${startDate.toLocaleString()} !`
+      `Votre demande a bien été envoyée à ${mentor.name} pour le ${startDate.toLocaleString()} !`
     );
     setStartDate(null);
   };
 
   return (
     <div id="mentor">
+      <NavLink to="/mentor" className="return">
+        <p className="return-mentors">
+          <FaArrowLeft className="return-arrow" />
+          retour
+        </p>
+      </NavLink>
       <section className="header-mentor">
-        <img src={mentors.img} alt="profil" />
-        <h1>{mentors.firstname}</h1>
+        <img src={mentor.img} alt="profil" />
+        <h1>{mentor.name}</h1>
       </section>
       <section className="groupe-mentor">
-        <h3 className="expertise">{mentors.expertise}</h3>
-        <p>{mentors.age} ans</p>
-        <p>{mentors.localisation}</p>
+        <h3 className="expertise">{mentor.job}</h3>
+        <p>{mentor.age} ans</p>
+        <p>{mentor.localisation}</p>
       </section>
       <button type="button" className="button-rdv" onClick={handleClick}>
         <LuCalendarClock className="calendar-icon" />
@@ -72,14 +78,22 @@ function Mentor() {
           </section>
         </>
       )}
-      {confirmation && <p className="confirmation">{confirmation}</p>}
+      {confirmation && (
+        <section className="hide-message">
+          <p className="confirmation">{confirmation}</p>
+          <button type="button" className="hide-button">
+            <BiMessageRounded className="message-icon" />
+            Entrez en contact
+          </button>
+        </section>
+      )}
       <h1 className="skills">Compétences :</h1>
       <section className="card-training">
-        <ul>
-          <li>{mentors.skills1}</li>
-          <li>{mentors.skills2}</li>
-          <li>{mentors.skills3}</li>
-          <li>{mentors.skills4}</li>
+        <ul className="liste-skills">
+          <li>{mentor.skills1}</li>
+          <li>{mentor.skills2}</li>
+          <li>{mentor.skills3}</li>
+          <li>{mentor.skills4}</li>
         </ul>
       </section>
     </div>
