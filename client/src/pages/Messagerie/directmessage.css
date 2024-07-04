@@ -1,0 +1,26 @@
+.display-dm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 100vh;
+}
+
+.section-dm {
+  width: 90vw;
+  min-height: 10vh;
+  height: max-content;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #e7f9fa;
+}
+
+.anwser-dm {
+  display: flex;
+  width: 100%;
+  height: 15%;
+  border-radius: 10px 10px 0 0;
+  background-color: #e7f9fa;
+  position: fixed;
+  bottom: 0;
+}

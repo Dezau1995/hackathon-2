@@ -12,6 +12,8 @@ import Mentor from "./pages/Mentor/Mentor";
 import Listementors from "./pages/ListeMentors/Listementors";
 import Formation from "./pages/Formation/Formation";
 import Createaccount from "./pages/login/Createacount";
+import Messagerie from "./pages/Messagerie/Messagerie";
+import DirectMessage from "./pages/Messagerie/DirectMessage";
 
 const api = "http://192.168.1.251:8000";
 
@@ -40,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/mentor/:id",
         element: <Mentor />,
-        loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
+        loader: ({ params }) => fetch(`${api}/mentors/${params.id}`),
       },
       {
         path: "/appointment",
@@ -63,8 +65,17 @@ const router = createBrowserRouter([
         path: "/createacount",
         element: <Createaccount />,
       },
+      {
+        path: "/messagerie",
+        element: <Messagerie />,
+        loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+      },
     ],
-    
+  },
+  {
+    path: "/direct-message",
+    element: <DirectMessage />,
+    loader: () => fetch(`http://192.168.1.251:8000/mentors`),
   },
 ]);
 
