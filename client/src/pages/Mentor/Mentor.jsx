@@ -32,15 +32,15 @@ function Mentor() {
 
   return (
     <div id="mentor">
-      <div className="header-mentor">
+      <section className="header-mentor">
         <img src={mentors.img} alt="profil" />
         <h1>{mentors.firstname}</h1>
-      </div>
-      <div className="groupe-mentor">
+      </section>
+      <section className="groupe-mentor">
         <h3>Groupe</h3>
         <p>{mentors.age}</p>
         <p>{mentors.localisation}</p>
-      </div>
+      </section>
       <button type="button" className="button-rdv" onClick={handleClick}>
         <LuCalendarClock className="calendar-icon" />
         Prendre RDV
@@ -68,10 +68,10 @@ function Mentor() {
       )}
       {confirmation && <p className="confirmation">{confirmation}</p>}
       <h1>Formations</h1>
-      <div className="card-training">
+      <section className="card-training">
         <card>Hello</card>
         <card>Bye</card>
-      </div>
+      </section>
     </div>
   );
 }
