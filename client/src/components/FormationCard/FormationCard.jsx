@@ -24,7 +24,7 @@ function FormationCard({ formation }) {
             <li key={formation.id}>{detail}</li>
           ))}
         </ul>
-        <button type="button">Voir la formation</button>
+        <button className="submit-button" type="button">Voir la formation</button>
       </section>
     </article>
   );

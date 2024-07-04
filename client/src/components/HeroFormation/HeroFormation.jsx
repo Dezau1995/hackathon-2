@@ -20,9 +20,9 @@ function HeroFormation({ formation }) {
           ))}
         </ul>
         <section className="card-title">
-          <button type="submit">Voir la formation</button>
+          <button className="submit-button" type="submit">Voir la formation</button>
           <button type="button">
-            <BookmarkAdd />
+            <BookmarkAdd alt='sauvegarder la formation'/>
           </button>
         </section>
       </section>
