@@ -4,7 +4,7 @@
 }
 .imgmentor {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .name {
   margin-top: 15px;
@@ -17,12 +17,49 @@
 .service {
   background-color: #90dfeb;
   border-radius: 25px;
-  height: 120px;
   margin: 15px;
   padding: 8px 0 0 15px;
 }
 .titleservice {
   font-family: "Passion One";
   font-size: 24px;
+  font-weight: 900;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  color: #27515e;
+  border: none;
+  padding: 5px 10px;
+  margin: 5px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover {
+  background-color: #ffffff;
+}
+
+.pagination button.active {
+  background-color: #27515e;
+  color: white;
+}
+
+.pagination button:disabled {
+  background-color: #f0f0f0;
+  cursor: not-allowed;
+  color: #cccccc;
+}
+.titlelistementor {
+  text-align: center;
+  font-family: "Passion One";
   font-weight: 900;
 }

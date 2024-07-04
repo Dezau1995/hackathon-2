@@ -10,6 +10,7 @@ import Form from "./pages/Form/Form";
 import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
+import Listementors from "./pages/ListeMentors/Listementors";
 
 const router = createBrowserRouter([
   {
@@ -39,7 +40,11 @@ const router = createBrowserRouter([
       {
         path: "/request",
         element: <Request />,
-      }
+      },
+      {
+        path: "/mentor",
+        element: <Listementors />,
+      },
     ],
   },
 ]);
