@@ -11,6 +11,7 @@ import Helpers from "./pages/Helpers/Helpers";
 import Appointment from "./pages/Appointment/Appointment";
 import Request from "./pages/Request/Request";
 import Listementors from "./pages/ListeMentors/Listementors";
+import Createaccount from "./pages/login/Createacount";
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
-        loader:() => fetch(`http://192.168.1.251:8000/clients`),
+        loader: () => fetch(`http://192.168.1.251:8000/clients`),
       },
       {
         path: "/form",
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
       {
         path: "/mentor",
         element: <Listementors />,
+      },
+      {
+        path: "/createacount",
+        element: <Createaccount />,
       },
     ],
   },
