@@ -42,7 +42,7 @@ const router = createBrowserRouter([
       {
         path: "/mentor/:id",
         element: <Mentor />,
-        loader: ({ params }) => fetch(`${api}/mentors/${params.id}`),
+        // loader: ({ params }) => fetch(`${api}/mentors/${params.id}`)
       },
       {
         path: "/appointment",

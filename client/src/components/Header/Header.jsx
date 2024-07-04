@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import "./Header.css";
 import { GrMenu } from "react-icons/gr";
 import { RxCross1 } from "react-icons/rx";
@@ -14,7 +15,9 @@ function Header() {
 
   return (
     <div id="header">
-      <img src={logo} alt="logo" />
+      <NavLink to="/">
+        <img src={logo} alt="logo" />
+      </NavLink>
       <div
         className={`burgerMenu ${isOpen ? "open" : ""}`}
         onClick={toggleMenu}
@@ -32,7 +35,9 @@ function Header() {
           </ul>
         </nav>
       )}
-      <LuUser2 className="user-logo" />
+      <NavLink to="/createacount">
+        <LuUser2 className="user-logo" />
+      </NavLink>
     </div>
   );
 }
