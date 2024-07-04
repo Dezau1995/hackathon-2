@@ -3,8 +3,10 @@ import "./App.css";
 
 function App() {
   return (
-  <Outlet />
-)
+    <main>
+      <Outlet />
+    </main>
+  );
 }
 
 export default App;
