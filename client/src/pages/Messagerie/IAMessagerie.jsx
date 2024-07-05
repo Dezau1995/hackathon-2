@@ -43,11 +43,17 @@ function IAMessagerie() {
   };
 
   return (
-    <main>
+    <main className="display-dm">
       <MdOutlineArrowBack className="icon-navigation" onClick={handleClick} />
-      <h1>IA Générative</h1>
+      <h1>Hand2Hand IA</h1>
+      <p className="ia-introduction">
+        Découvrez notre nouvelle IA intégrée pour un mentorat révolutionnaire !
+        Notre IA identifie vos besoins spécifiques et vous recommande les mentors les mieux adaptés. Profitez
+        d'un suivi personnalisé en temps réel avec des ressources éducatives et
+        des conseils sur mesure.
+      </p>
       <section className="section-dm">
-        <p>Bonjour, en quoi puis-je vous aider ?</p>
+        <p>Bonjour, posez moi une question ?</p>
       </section>
       {isReplying && (
         <section className="section-dm">

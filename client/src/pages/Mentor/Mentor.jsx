@@ -81,10 +81,12 @@ function Mentor() {
       {confirmation && (
         <section className="hide-message">
           <p className="confirmation">{confirmation}</p>
-          <button type="button" className="hide-button">
+          <NavLink to="/direct-message">
+          <button type="button" className="hide-button" >
             <BiMessageRounded className="message-icon" />
             Entrez en contact
           </button>
+          </NavLink>
         </section>
       )}
       <h1 className="skills">Compétences :</h1>

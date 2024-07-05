@@ -4,7 +4,6 @@ import "./directmessage.css";
 import { useNavigate } from "react-router-dom";
 import { MdOutlineArrowBack } from "react-icons/md";
 import { BsFillSendFill } from "react-icons/bs";
-import Header from "../../components/Header/Header";
 
 function DirectMessage() {
   const navigate = useNavigate();
@@ -21,7 +20,6 @@ function DirectMessage() {
 
   return (
     <main className="display-dm">
-      <Header />
       <MdOutlineArrowBack className="icon-navigation" onClick={handleClick} />
       <h1>Brian Boudrioux</h1>
       <section className="section-dm">

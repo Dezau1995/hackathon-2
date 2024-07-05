@@ -5,7 +5,7 @@ import "./Home.css";
 
 function Home() {
   return (
-    <div id="home">
+    <main id="home">
       <h1>Hand 2 Hand</h1>
       <img src={first} alt="first" />
       <p>
@@ -39,7 +39,7 @@ function Home() {
           Découvrir
         </button>
       </section>
-    </div>
+    </main>
   );
 }
 

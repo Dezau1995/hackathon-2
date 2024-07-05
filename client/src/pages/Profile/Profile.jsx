@@ -1,4 +1,3 @@
-import { RxAvatar } from "react-icons/rx";
 import { MdContactMail } from "react-icons/md";
 import "./profile.css";
 // import { useLoaderData } from "react-router-dom";
@@ -11,7 +10,7 @@ function Profile() {
   return (
     <main>
       <section className="avatar-profile">
-        <RxAvatar className="icon-avatar" />
+        <img src="https://www.oulfa.fr/temp/userimages/0030/917388/pic_1.jpg" alt="icon-avatar" className="icon-avatar"/>
       </section>
       <section className="section-user-profile">
         <h1>Monique Sanchez</h1>
@@ -32,8 +31,8 @@ function Profile() {
             <ul>
               <li>Apprendre le français</li>
               <li>De l'aide pour faire son CV</li>
-              <li>Apprendre le français</li>
-              <li>Apprendre le français</li>
+              <li>Trouver grâce à mes compétences une orientation personnelle</li>
+              {/* <li>Apprendre le français</li> */}
             </ul>
 
         </article>
