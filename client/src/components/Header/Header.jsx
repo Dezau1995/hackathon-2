@@ -34,13 +34,13 @@ function Header() {
               <a href="/mentors">Mentors</a>
               <a href="/formations">Formations</a>
               <a href="/messagerie">Messagerie</a>
-              <a href="/i-a">Hand2Hand AI</a>
+              <a href="/i-a">Hand2Hand IA</a>
             </li>
           </ul>
         </nav>
       )}
-      <NavLink to="/createacount">
-        <LuUser2 className="user-logo" />
+      <NavLink to="/profile">
+        <LuUser2 className="user-logo"/>
       </NavLink>
     </div>
   );

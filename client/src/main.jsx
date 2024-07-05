@@ -30,7 +30,7 @@ const router = createBrowserRouter([
       {
         path: "/profile",
         element: <Profile />,
-        loader: () => fetch(`http://192.168.1.251:8000/clients`),
+        // loader: () => fetch(`http://192.168.1.251:8000/clients`),
       },
       {
         path: "/form",
@@ -75,13 +75,14 @@ const router = createBrowserRouter([
         path:"/i-a",
         element: <IAMessagerie />
       },
+      {
+        path: "/direct-message",
+        element: <DirectMessage />,
+        // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
+      },
     ],
   },
-  {
-    path: "/direct-message",
-    element: <DirectMessage />,
-    // loader: () => fetch(`http://192.168.1.251:8000/mentors`),
-  },
+  
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
